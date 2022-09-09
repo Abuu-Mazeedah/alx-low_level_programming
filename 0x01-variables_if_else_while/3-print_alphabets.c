@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry
  *
@@ -7,6 +9,7 @@
 int main(void)
 {
 	int i, j;
+
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		putchar(i);
@@ -15,6 +18,6 @@ int main(void)
 	{
 		putchar(j);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
