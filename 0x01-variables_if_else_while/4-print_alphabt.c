@@ -7,10 +7,11 @@
 int main(void)
 {
 	int i;
-	for(i = 'a'; i <= 'z'; i++){
-		if(i == 'e')
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		if (i == 'e')
 			i = 'f';
-		else if(i == 'q')
+		else if (i == 'q')
 			i = 'r';
 		else
 			putchar(i);
