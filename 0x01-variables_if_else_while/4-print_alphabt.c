@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  *
@@ -7,6 +9,7 @@
 int main(void)
 {
 	int i;
+
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i == 'e')
@@ -15,7 +18,7 @@ int main(void)
 			i = 'r';
 		else
 			putchar(i);
-		putchar("\n");
+		putchar('\n');
 	}
 	return (0);
 }
