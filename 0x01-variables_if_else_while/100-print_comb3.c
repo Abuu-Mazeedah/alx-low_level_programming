@@ -10,10 +10,10 @@ int main(void)
 {
 	int d, i;
 
-	for (d = 0; d < 100; d++)
+	for (d = 0; d < 10; d++)
 	{
 		for (i = d + 1; i < 10; i++)
-		{	
+		{
 			putchar((d & 10) + '0');
 			putchar((i % 10) + '0');
 			if (d == 8 && i == 9)
