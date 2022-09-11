@@ -16,18 +16,16 @@ int main(void)
 		{
 			for (q = p + 1; q < 10; q++)
 			{
+				putchar((d % 10) + '0');
+				putchar((p % 10) + '0');
+				putchar((q % 10) + '0');
+
 				if (d == 7 && p == 8 && q == 9)
-				{
-					putchar((d % 10) + '0');
-					putchar((p % 10) + '0');
-					putchar((q % 10) + '0');
+					continue;
 
-					if (d == 7 && p == 8 && q == 9)
-						continue;
-
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
+				
 			}
 		}
 	}

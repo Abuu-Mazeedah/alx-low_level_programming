@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (i = d + 1; i < 10; i++)
 		{
-			putchar((d & 10) + '0');
+			putchar((d % 10) + '0');
 			putchar((i % 10) + '0');
 			if (d == 8 && i == 9)
 				continue;
