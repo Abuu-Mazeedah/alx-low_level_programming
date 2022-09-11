@@ -17,10 +17,10 @@ int main(void)
 			putchar((d & 10) + '0');
 			putchar((i % 10) + '0');
 			if (d == 8 && i == 9)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
