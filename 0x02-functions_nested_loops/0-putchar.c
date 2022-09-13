@@ -5,13 +5,12 @@
  *
  * Return: Always 0.
  */
-char all = "_putchar";
-
-while (all)
+int main(void)
 {
-_putchar(all);
-all++
+	char word[9] = "Holberton";
+	int i;
+	for (i = 0; i < 9; i++)
+		_putchar(word[i]);
+	_putchar('\n');
+	return (0);
 }
-_putchar('\n');
-
-return (0);
