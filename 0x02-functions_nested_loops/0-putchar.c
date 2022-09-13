@@ -5,13 +5,13 @@
  *
  * Return: Always 0.
  */
-int main(void)
+char all = "_putchar";
+
+while (all)
 {
-	char container [10] = "_putchar";
-	for(int i = 0; i < 8; i++)
-	{
-		putchar(container[i]);
-	}
-	putchar('\n');
-	return (0);
+_putchar(all);
+all++
 }
+_putchar('\n');
+
+return (0);
