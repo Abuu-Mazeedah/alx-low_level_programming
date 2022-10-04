@@ -7,36 +7,22 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *new_str, *starts1, *starts2;
-	int i = 0, lens1 = 0, lens2 = 0;
+	char *p;
+	int s1count, s2count, sizeBuffer, i;
 
-	starts1 = s1;
-	starts2 = s2;
 	if (s1 == NULL)
 		s1 = "";
-	while (*s1)
-	{
-		lens1++;
-		s1++;
-	}
-	s2 = starts2;
-	new_str = malloc(sizeof(char) * (lens1 + lens2 + 1));
-	starts1 = new_str;
-	if (new_str == NULL)
+	if (s2 == NULL)
+		s2 = "";
+	for (s1count = 0; s1[s1count]; s1count++)
+		;
+	for (s2count = 0; s2[s2count]; s2count++)
+		;
+	sizeBuffer = s1count + s2count + 1;
+	p = malloc(sizeBuffer * sizeof(char));
+	if (p == NULL)
 		return (NULL);
-	for (; i < (lens1 + lens2); i++)
-	{
-		if (i < lens1)
-		{
-			new_str[i] = *s1;
-			s1++;
-		}
-		else
-		{
-			new_str[i] = *s2;
-			s2++;
-		}
-	}
-	new_str[i] = '\0';
-	return (starts1);
+	for (i = 0; i < sizeBuffer; i++)
+		i < s1count ? (p[i] = s1[i]) : (p[i] = s2[i - s1count]);
+	return (p);
 }
