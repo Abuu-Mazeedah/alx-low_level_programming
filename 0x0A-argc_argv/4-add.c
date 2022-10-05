@@ -4,12 +4,13 @@
  * main - A program that adds positive numbers
  * @argc: The arguments counter
  * @argv: The arguments values
- * Return: Always 0
+ *
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
 	int num, digit, sum = 0;
-	
+
 	for (num = 1; num < argc; num++)
 	{
 		for (digit = 0; argv[num][digit]; digit++)
