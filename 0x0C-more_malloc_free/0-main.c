@@ -1,8 +1,7 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-
 /**
  * main - check the code for Holberton School students.
  *
@@ -11,7 +10,7 @@
 int main(void)
 {
 	char *c;
-	iny *i;
+	int *i;
 	float *f;
 	double *d;
 
